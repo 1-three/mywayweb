@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login / Sign Up</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/css/loginstyle.css">
   <style>
     /* Add your custom styles here */
     /* Paste the CSS code provided */
@@ -63,40 +63,55 @@
 
     <!-- Additional Form -->
     <form class="form">
-      <!-- Your additional form content here -->
+      <div class="flex-column">
+        <label>Email</label>
+      </div>
+      <div class="inputForm">
+        <svg height="20" viewBox="0 0 32 32" width="20" xmlns="http://www.w3.org/2000/svg">
+          <!-- Email SVG Icon -->
+        </svg>
+        <input type="text" class="input" placeholder="Enter your Email">
+      </div>
+
+      <div class="flex-column">
+        <label>Password</label>
+      </div>
+      <div class="inputForm">
+        <svg height="20" viewBox="-64 0 512 512" width="20" xmlns="http://www.w3.org/2000/svg">
+          <!-- Password SVG Icon -->
+        </svg>
+        <input type="password" class="input" placeholder="Enter your Password">
+        <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+          <!-- Show/Hide Password SVG Icon -->
+        </svg>
+      </div>
+
+      <div class="flex-row">
+        <div>
+          <input type="checkbox">
+          <label>Remember me</label>
+        </div>
+        <span class="span">Forgot password?</span>
+      </div>
+      <button class="button-submit">Sign In</button>
+      <p class="p">Don't have an account? <span class="span">Sign Up</span></p>
+      <p class="p line">Or With</p>
+      <div class="flex-row">
+        <button class="btn google">
+          <img src="D:\college\first year\other non academic\mywayweb\futras\assets\images\google.svg" alt="Google" height="20">
+          Google
+        </button>
+        <button class="btn apple">
+          <img src="D:\college\first year\other non academic\mywayweb\futras\assets\images\apple.svg" alt="Apple" height="20">
+          Apple
+        </button>
+      </div>
     </form>
 
     <div id="message" class="message"></div>
   </div>
 
   <!-- JavaScript -->
-  <script>
-    // Paste your JavaScript code provided
-    const signUpButton = document.getElementById('signUp');
-    const signInButton = document.getElementById('signIn');
-    const container = document.getElementById('container');
-
-    signUpButton.addEventListener('click', () => {
-      container.classList.add("right-panel-active");
-    });
-
-    signInButton.addEventListener('click', () => {
-      container.classList.remove("right-panel-active");
-    });
-  </script>
-  <script>
-    const signUpButton = document.getElementById('signUp');
-    const signInButton = document.getElementById('signIn');
-    const container = document.getElementById('container');
-  
-    signUpButton.addEventListener('click', () => {
-      container.classList.add("right-panel-active");
-    });
-  
-    signInButton.addEventListener('click', () => {
-      container.classList.remove("right-panel-active");
-    });
-  </script>
-  
+  <script src="script.js"></script>
 </body>
 </html>
