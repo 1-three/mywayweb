@@ -77,6 +77,12 @@ const reveal = function () {
 
   }
 }
+document.addEventListener('DOMContentLoaded', function () {
+  window.addEventListener('scroll', function () {
+      let scrollPosition = window.pageYOffset;
+      document.querySelector('.hero').style.backgroundPositionY = scrollPosition * 0.7 + 'px';
+  });
+});
 
 reveal();
 addEventOnElem(window, "scroll", reveal);
