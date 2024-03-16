@@ -11,8 +11,8 @@ aria-label = close menu
 
 Home
 About Us
-All Course
-Blog
+ChatBot
+Posts
 Contact
 
 Sign Up
