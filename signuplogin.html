@@ -8,12 +8,55 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     /* Add your custom styles here */
-    /* Paste the CSS code provided */
-  </style>
+button {
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.container {  </style>
 </head>
 <body style="background-color: #ffffff;">
   <div class="container">
-    <!-- Weekly Coding Challenge #1: Sign in/up Form -->
     <div class="container" id="container">
       <div class="form-container sign-up-container">
         <form action="#">
@@ -60,11 +103,8 @@
         </div>
       </div>
     </div>
-
     <div id="message" class="message"></div>
   </div>
-
-  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
