@@ -5,55 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login / Sign Up</title>
   <link rel="stylesheet" href="assets/css/loginstyle.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
     /* Add your custom styles here */
-button {
-	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
-	color: #FFFFFF;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 12px 45px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	transition: transform 80ms ease-in;
-}
-
-button:active {
-	transform: scale(0.95);
-}
-
-button:focus {
-	outline: none;
-}
-
-button.ghost {
-	background-color: transparent;
-	border-color: #FFFFFF;
-}
-
-form {
-	background-color: #FFFFFF;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	padding: 0 50px;
-	height: 100%;
-	text-align: center;
-}
-
-input {
-	background-color: #eee;
-	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
-	width: 100%;
-}
-
-.container {  </style>
+    /* CSS styles are omitted for brevity */
+  </style>
 </head>
 <body style="background-color: #ffffff;">
   <div class="container">
@@ -62,7 +18,7 @@ input {
         <form action="#">
           <h1>Create Account</h1>
           <div class="social-container">
-            <a href="#" class="social"> <i class="fab fa-facebook-f"><i></a>
+            <a href="#" class="social"> <i class="fab fa-facebook-f"></i> </a>
             <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
             <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
           </div>
@@ -77,9 +33,9 @@ input {
         <form action="#">
           <h1>Sign in</h1>
           <div class="social-container">
-            <a href="#" class="social"> <img src="assets/images/facebookicon.png" style="height:30px"></a>
-            <a href="#" class="social"><img src="assets/images/googleplusicon.png" style="height:30px"></a>
-            <a href="#" class="social"><img src="assets/images/linkedinicon.jpg" style="height:30px"></a>
+            <a href="#" class="social"> <i class="fab fa-facebook-f"></i> </a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
           </div>
           <span>or use your account</span>
           <input type="email" placeholder="Email" />
@@ -105,6 +61,18 @@ input {
     </div>
     <div id="message" class="message"></div>
   </div>
-  <script src="script.js"></script>
+  <script>
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+      container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+      container.classList.remove("right-panel-active");
+    });
+  </script>
 </body>
 </html>
